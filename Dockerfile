@@ -6,7 +6,7 @@ RUN apt-get update \
   curl \
   sudo
 
-WORKDIR /workspaces/node-16-setup
+WORKDIR /node-16
 
 ARG USERNAME=jorge
 ARG USER_UID=1001
@@ -17,8 +17,6 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     && usermod -aG sudo $USERNAME \
-    && chown -R $USERNAME:$USERNAME .
+    && sudo chown -R $USERNAME:$USERNAME .
 
 USER $USERNAME
-
-ENTRYPOINT [ "npm" ]
