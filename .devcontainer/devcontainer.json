@@ -1,7 +1,11 @@
 //devcontainer.json
 {
-  "name": "Node 16 Set Up",
-  "dockerComposeFile": "../docker-compose.yaml",
+  "name": "Node 16",
+
+  "dockerFile": "../Dockerfile",
+
+  "workspaceFolder": "/workspaces/node-16-setup",
+
   "customizations": {
     "vscode": {
       "settings": {
@@ -23,5 +27,5 @@
     }
   },
 
-  "postCreateCommand": "bash script.sh"
+  "postCreateCommand": "bash script.sh",
 }
