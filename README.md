@@ -1,7 +1,7 @@
 # Node 16 and Docker.
 This repo covers information regard with Node 16 and Docker containers.
 
-<div style="display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 10px; text-align: center; gap: 60px;">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; text-align: center; gap: 60px;">
   <img src="./images/docker.png" width="200" height="50" />
   <img src="./images/node.png" width="110" />
 </div>
