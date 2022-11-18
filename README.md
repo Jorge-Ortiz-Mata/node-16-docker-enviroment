@@ -1,14 +1,15 @@
 # Node 16 and Docker.
 This repo covers information regard with Node 16 and Docker containers.
 
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; text-align: center; gap: 60px;">
-  <img src="./images/docker.png" width="200" height="50" />
-  <img src="./images/node.png" width="110" />
-</div>
+<img src="./images/docker.png" width="200" height="50" />
 
 ## Description.
 
-This Node image was built using Docker. It means that you can pull this repo or fork it, create the Docker container and once is finished, you can create your own apps where you need Node 16.
+This Node image was built using Docker.
+
+<img src="./images/node.png" width="110" />
+
+It means that you can pull this repo or fork it, create the Docker container and once is finished, you can create your own apps where you need Node 16.
 It covers only the basics, and then, you will create your own projects starting from this one. Feel free to change anything you need or failures you have.
 
 ### VS Code.
@@ -43,6 +44,14 @@ By default, the container will open the project using the **jorge** user. You ca
 <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
   <img src="./images/02.png" width="200" />
 </div>
+
+## Install other dependencies.
+
+This section covers some basic information related to installing npm packages globally.
+
+### React Native and Expo CLI.
+
+* If you want to install expo-cli and generate a React Native app from the container created, you have to install the package using sudo. `sudo npm install -g expo-cli`
 
 ## Author.
 
